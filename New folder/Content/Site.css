@@ -1,0 +1,579 @@
+﻿
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+}
+/*#region Navbar */
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/*remove nav bar margin bottom */
+.navbar {
+    margin-bottom: 0px;
+}
+
+/*On hover effect*/
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    color: #333333;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #333333;
+}
+
+.navbar {
+    border-color: #fff6f3;
+    background-color: #fff6f3;
+}
+/*#endregion */
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/*/* Set width on the form input elements since they're 100% wide by default */
+/*select,
+textarea {
+    max-width: 280px;
+}*/
+
+/*width of the acount navbar maenu*/
+.css-width {
+    min-width: 143px;
+}
+
+/*making the footer menu to be inline no bullet*/
+.css-footer li {
+    display: inline !important;
+    /*padding-right:2px;*/
+}
+
+    /*making the footer menu to be inline no bullet*/
+    .css-footer li.pipe::before {
+        content: " | ";
+    }
+
+/*ToDo: Remove it, bad design*/
+.css-margin {
+    margin-right: 20px;
+}
+
+/*option button styling*/
+.btn {
+    font-weight: 400;
+    border-style: solid !important;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    user-select: none;
+    background-image: none;
+    text-decoration: none;
+    font-weight: 400;
+    border-style: solid;
+    margin-left: 2px !important;
+    border-radius: 0px;
+}
+
+.btn-grey.btn-line, .btn-line.btn-unactive {
+    color: #515d6b !important;
+}
+
+.btn-xxs.btn-circle, .btn-xxs.btn-square {
+    width: 25px;
+}
+
+.btn-xxs.btn-line, .btn-xxs.btn-ns {
+    border-width: 2px;
+}
+
+.btn-square {
+    overflow: hidden;
+    padding: 0;
+}
+
+.btn-line {
+    background: none;
+    border-color: currentColor;
+}
+
+.btn-xxs {
+    font-size: 1.2rem;
+    line-height: 21px;
+}
+
+/*validation for field*/
+.input-validation-error {
+    border: 2px solid red;
+}
+
+.css-nomargin {
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow-x: hidden;
+}
+
+/*#region Carousal */
+
+.item {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.imgbanner {
+    max-width: 100%;
+    max-height: 90vh;
+    height: 580px !important;
+}
+
+.css-logo {
+    width: 130px;
+}
+
+.carousel-caption h2 {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 58px;
+    letter-spacing: 1px;
+    text-shadow: none;
+}
+
+@media (min-width: 768px) {
+    .hide-desktop {
+        display: none !important;
+    }
+}
+
+.css-carousel-color {
+    background-color: #ff7b5c;
+}
+
+.css-carousel-control {
+    width: 5%;
+    top: 50%;
+    bottom: 50%;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h2 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-caption h2 {
+        font-size: 38px;
+    }
+}
+
+
+.carousel-caption h5 {
+    padding: 0;
+    color: #FFF;
+    font-weight: normal;
+    font-size: 24px;
+    margin: 30px 0 40px;
+    line-height: 1.5;
+    text-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+}
+/*#endregion */
+.how {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.page-content {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
+.how .how-content-block {
+    background: #fff6f3;
+    padding-top: 60px;
+    padding-right: 120px;
+    padding-bottom: 20px;
+    padding-left: 120px;
+}
+
+.how .how-header {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.how .how-content-list-item {
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+.css-bold {
+    font-weight: bolder;
+}
+
+.how .how-content-list-item p {
+    padding: 0 0 0 30px;
+    margin: 0;
+}
+
+.how .how-content-list {
+    padding: 0;
+}
+
+.how-icon i {
+    color: #ff7b5c;
+}
+
+
+@media (max-width: 768px) {
+    .page-content {
+        min-width: 320px !important;
+    }
+
+    .hide-medium {
+        display: none !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .how .how-content {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .how .how-content-block {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .how .how-header {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .how .how-content-list-item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .how .how-content-list-item {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .how .how-content-list-item p {
+        padding: 20px 0 0;
+    }
+}
+
+.footer {
+    width: 100%;
+    background: #423d51;
+    color: #FFF;
+}
+
+
+    .footer .footer-inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: stretch;
+        -webkit-align-items: stretch;
+        -moz-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        padding: 40px 20px;
+    }
+
+.page-content--medium {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.footer .footer-actions {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.footer .footer-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer .footer-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer .footer-nav-section {
+    padding-right: 80px;
+    padding-bottom: 20px;
+}
+
+.footer .footer-nav-header {
+    font-size: 15px;
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.footer .footer-nav-section ul {
+    margin-bottom: 0;
+}
+
+    .footer .footer-nav-section ul li {
+        margin-bottom: 5px;
+    }
+
+.footer .footer-newsletter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.footer .footer-newsletter-header {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    padding-right: 60px;
+}
+
+.footer .footer-base {
+    border-top: 2px solid #343041;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.footer .footer-logo {
+    height: 48px;
+    background: url(../images/Loom_Logo.svg) no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-flex-basis: 160px;
+    -ms-flex-preferred-size: 160px;
+    flex-basis: 160px;
+    text-indent: -999em;
+}
+
+.footer .footer-social a {
+    font-size: 28px;
+    color: #FFF;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer .footer-actions {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .footer-nav {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -moz-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        padding-top: 20px;
+    }
+}
+
+
+/*text needs to be in center for meet the authors in contact us page*/
+.info-header {
+    width: 50%;
+    margin: auto;
+    border-bottom: 1px #ddd solid;
+}
+
+/*margin bottom set for difference between two rows*/
+.mb-5 {
+    margin-bottom: 3.5rem !important;
+}
+
+/*card property not avialable in bootstrap*/
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+/*make card image half out of card*/
+/*#authors img {
+    margin-top: -50px;
+}*/
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.flex-row {
+    flex-direction: row !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+#authors .fa {
+    font-size: 25px;
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+}
+
+.card-subtitle {
+    margin-top: -0.375rem;
+    margin-bottom: 0;
+}
+
+/* benefits of consultancy bridge padding between icon and desc */
+.css-text
+{
+    padding-left: 30px;
+    width: 80% !important;
+}

@@ -1,0 +1,80 @@
+﻿@model ConsultancyBridge.ViewModel.ContactViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (ViewBag.Message != null)
+{
+    <span>@ViewBag.Message</span>
+}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <H3 class="text-primary"> Get in Touch</H3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <div class="form-horizontal">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><i class="fa fa-user-circle-o"></i></span>
+                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = Html.DisplayNameFor(m => m.Name) } })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = Html.DisplayNameFor(m => m.Email) } })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
+                            @Html.TextAreaFor(model => model.Message, new {  @class = "form-control", @placeholder = Html.DisplayNameFor(m => m.Message),rows = "3" } )
+                            @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg mb-5" />
+                    </div>
+                </div>
+            }
+
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="text-primary">Consultancy Bridge Ltd</h3>
+
+                    <h5> Registered Office</h5>
+                    <address>
+                        708, South  Beech Street<br />
+
+                        Syracuse, New York<br />
+                        USA 13210<br />
+                        Tel: +1 315-664-8629
+
+                    </address>
+
+                    <h5> Corporate Office </h5>
+                    <address>
+                        B, Sector-53<br />
+                        Noida<br />
+                        India-201301<br />
+                        Tel: +91 8588853475
+                    </address>
+
+                    <a href="mailto:support@consultancybridge.com">support@consultancybridge.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
